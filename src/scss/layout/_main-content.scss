@@ -1,0 +1,12 @@
+@import "../abstracts/mixin";
+
+.main-content {
+
+  &__make-friend {
+    padding-top: 9rem;
+
+    @include respond-to(large) {
+      padding-top: 18rem;
+    }
+  }
+}

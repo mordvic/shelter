@@ -1,0 +1,50 @@
+$base-font-size: 10px;
+$base-font-family: 'Georgia';
+$further-font-family: 'Arial';
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+//-------------Buttons-Color
+$btn-color-primary: #F1CDB3;
+$btn-color-primary-light: #FDDCC4;
+
+//-------------Links-Color
+$link-color-light-l: #CDCDCD;
+$link-color-white: #FFFFFF;
+$link-active-color-light-s: #FAFAFA;
+$link-hover-color-light-s: #FAFAFA;
+$link-hover-color-primary: #F1CDB3;
+$link-color-dark-l: #545454;
+$link-active-color-dark-l: #545454;
+$link-hover-color-dark-3xl: #292929;
+
+//-------------Title-Color
+$title-color-primary: #F1CDB3;
+$title-color-dark-l: #545454;
+$title-color-light-xl: #FFFFFF;
+$title-section-color-light-xl: #FFFFFF;
+$title-section-color-dark-l: #545454;
+$title-section-color-dark-xl: #4C4C4C;
+
+//-------------Text-Color
+$text-color-light-xl: #FFFFFF;
+$text-color-dark-l: #4C4C4C;
+
+//-------------Background-Color
+$background-color-dark-3xl: #292929;
+$background-color-light-l: #F6F6F6;
+
+//-------------Border-Color
+$border-color-primary: #F1CDB3;
+
+//$breakpoints: (
+//        'small': (max-width: 320px) and (max-width:767px),
+//        'medium': (max-width: 768px) and (max-width:1279px),
+//        'large': (min-width: 1250px)
+//);
+
+$breakpoints: (
+        //'small': (max-width: 320px) and (max-width:767px),
+        'medium': (min-width: 768px),
+        'large': (min-width: 1250px)
+);

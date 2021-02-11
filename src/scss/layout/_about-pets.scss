@@ -1,0 +1,69 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+.about-pets{
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.2rem 2.5rem 4.24rem 2.5rem;
+
+    @include respond-to(medium) {
+      padding: 8rem 16.9rem 10rem 16.9rem;
+    }
+
+    @include respond-to(large) {
+      flex-direction: row-reverse;
+      padding: 8rem 21.5rem 10rem 21.5rem ;
+    }
+  }
+
+  &__title {
+    padding: 0 2rem;
+    text-align: center;
+    letter-spacing: .15rem;
+    color: $title-section-color-dark-l;
+
+    @include respond-to(medium) {
+      padding: 0 11rem 0 0;
+      text-align: left;
+      letter-spacing: .2rem;
+    }
+
+    @include respond-to(large) {
+      padding: 0 11rem 0 0;
+    }
+  }
+
+  &__description {
+    margin-top: 2.5rem;
+    text-align: justify;
+    color: $text-color-dark-l;
+
+    @include respond-to(medium) {
+      text-align: start;
+    }
+  }
+
+  &__description + &__description {
+    margin-top: 2.2rem;
+
+    @include respond-to(medium) {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__img {
+    display: flex;
+    margin-top: 4.2rem;
+
+    @include respond-to(medium) {
+      margin-top: 8rem;
+    }
+
+    @include respond-to(large) {
+      margin-top: 0;
+      margin-right: 12rem;
+    }
+  }
+}

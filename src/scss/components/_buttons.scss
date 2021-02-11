@@ -1,0 +1,67 @@
+@import "../../scss/abstracts/variables";
+
+.btn {
+  padding: 1.5rem 4.5rem;
+  border: 0 solid;
+  -webkit-border-radius: 10rem;
+  border-radius: 10rem;
+  font-size: 1.7rem;
+  line-height: 2.21rem;
+  letter-spacing: .06rem;
+  background-color: $btn-color-primary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $btn-color-primary-light;
+  }
+}
+
+.btn-burger {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+
+  &__inner {
+    display: block;
+    margin-top: -1px;
+    transition: transform 500ms;
+  }
+
+  &__inner,
+  &__inner::before,
+  &__inner::after {
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    background-color: $btn-color-primary;
+  }
+
+  &__inner::before,
+  &__inner::after {
+    content: "";
+    display: block;
+
+  }
+
+  &__inner::after {
+    top: .9rem;
+  }
+
+  &__inner::before {
+    bottom: .9rem;
+  }
+
+  &--pressed {
+    .btn-burger__inner {
+      transform: rotate(90deg);
+    }
+  }
+}

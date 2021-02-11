@@ -1,0 +1,50 @@
+@import "src/scss/abstracts/_variables.scss";
+@import "src/scss/abstracts/mixin";
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Georgia, serif;
+
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 3.52rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: normal;
+
+  @include respond-to(medium) {
+    font-size: 4.4rem;
+    line-height: 5.72rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: normal;
+
+  @include respond-to(medium) {
+    font-size: 3.5rem;
+    line-height: 4.55rem;
+  }
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+}
+
+p,
+a {
+  font-size: 1.5rem;
+  line-height: 160%;
+  font-family: $further-font-family, sans-serif;
+}

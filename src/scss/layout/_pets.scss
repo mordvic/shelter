@@ -1,0 +1,16 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+.pets {
+  background-color: $background-color-light-l;
+  height: 791px;
+  &__container {
+    padding: 4.2rem 1rem 5.7rem 1rem;
+  }
+
+  &__title {
+    text-align: center;
+    letter-spacing: .15rem;
+    color: $text-color-dark-l;
+  }
+}
